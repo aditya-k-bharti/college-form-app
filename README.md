@@ -1,6 +1,3 @@
-# college-form-app
-Project to store student data using Node.js &amp; MSSQL
-
 # College Form Application
 
 A full-stack web app to collect and store college admission form data. Built using:
