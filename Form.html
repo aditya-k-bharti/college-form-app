@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Application Form</title>
+    <link rel="stylesheet" href="Formstyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>College Application Form</h2>
+
+      <form id="applicationForm">
+        <!-- Personal Information -->
+        <div class="form-group">
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" required />
+          <small class="error-message"></small>
+
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname" required />
+          <small class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="DateOfBirth" required />
+          <small class="error-message"></small>
+        </div>
+
+        <div class="form-group-inline">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <small class="error-message"></small>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="number">Phone Number:</label>
+          <input type="text" id="number" name="MobileNo" required />
+          <small class="error-message"></small>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+          <label>Gender</label>
+
+          <table>
+            <tr>
+              <td>
+                <label for="male">Male</label>
+              </td>
+
+              <td>
+                <input type="radio" id="male" name="gender" value="Male" />
+              </td>
+
+              <td>
+                <label for="female">Female</label>
+              </td>
+
+              <td>
+                <input type="radio" id="female" name="gender" value="Female" />
+              </td>
+            </tr>
+          </table>
+          <small id="genderError" class="error-message"></small>
+        </div>
+
+        <!-- Course Selection -->
+        <div class="form-group">
+          <label for="course">Select Course:</label>
+
+          <select name="course" id="course">
+            <option value="Bsc Computer Science">BSC Computer Science</option>
+            <option value="Bcom">BCom</option>
+            <option value="BA English">BA English</option>
+            <option value="BBA">BBA</option>
+            <option value="Btech">BTech</option>
+            <option value="Bca">BCA</option>
+            <option value="Polytechnic Computer Science">Polytechnic Computer Science</option>
+            <option value="Bsc Maths">BSc Maths</option>
+            <option value="MBA">MBA</option>
+            <option value="MSc Computer Science">MSc Computer Science</option>
+            <option value="MCom">MCom</option>
+            <option value="MA English">MA English</option>
+            <option value="MTech">MTech</option>
+            <option value="MCA">MCA</option>
+            <option value="Diploma in CS">Diploma in Computer Science</option>
+            <option value="BDes">BDes</option>
+            <option value="BArch">BArch</option>
+            <option value="BPharma">BPharma</option>
+            <option value="BSc Physics">BSc Physics</option>
+          </select>
+          <small class="error-message"></small>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea name="address" id="address" rows="4"></textarea>
+          <small class="error-message"></small>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="form-group">
+          <label>Hobbies</label>
+
+          <table>
+            <tr>
+              <td>
+                <label for="sports">Sports</label>
+              </td>
+
+              <td>
+                <input type="checkbox" id="sports" name="Hobbies" value="Sports"/>
+              </td>
+
+              <td>
+                <label for="music">Music</label>
+              </td>
+
+              <td>
+                <input type="checkbox" id="music" name="Hobbies" value="Music"/>
+              </td>
+
+              <td>
+                <label for="reading">Reading</label>
+              </td>
+
+              <td>
+                <input type="checkbox" id="reading" name="Hobbies" value="Reading"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit">Submit Application</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
